@@ -1,0 +1,41 @@
+<h1>This is Reactive Component</h1>
+<!-- <form action="" class="card card-body offset-3 col-md-4 mt-5">
+    <div class="form-group">
+        <h2 class="bg-dark text-danger text-center">Add Movies</h2>
+        <input type="text" class="form-control" name="addmovie" id="addmovie" placeholder="Add Movie">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Movie Title">
+    </div>
+
+    <div class="form-group">
+        <input type="image" src="" class="form-control" alt="Some Image will Be Here" placeholder="Movie Image URl">
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" name="" id="" style="height: 80px;" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <button class=" btn btn-outline-danger float-right">Add Movie</button>
+    </div>
+</form> -->
+
+<div class="card card-body offset-4 col-md-4 mt-5">
+    <form action="" [formGroup]="form">
+        <h2 class="text-center text-warning bg-secondary">Add Movies</h2>
+        <div class="form-group">
+                <input type="text" name="addMovie" id="addMovie" class="form-control" placeholder="Movie Title">
+        </div>
+        <div class="form-group">
+            <!-- <input name="imgUrl" id="imgUrl" class="form-control" placeholder="Add Image of Movie"> -->
+            <input type="image" src="" alt="Movie Image" class="form-control" placeholder="Movie Image URL">
+        </div>
+        <div class="form-group">
+        <input type="text" name="desc" id="desc" class="form-control" placeholder="Description" style="height: 80px;">
+        </div>
+        <div class="form-group">
+            <div class="btn btn-outline-success float-right">Add Movie</div>
+        </div>
+    </form>
+</div>
