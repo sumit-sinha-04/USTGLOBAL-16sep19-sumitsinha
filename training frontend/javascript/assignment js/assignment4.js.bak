@@ -1,0 +1,48 @@
+var items=[
+
+    {item: 'flower',
+    price: 500,
+    use: 'none',
+    },
+    {
+        item:'car',
+        price:200 ,
+        value:'lot'
+},
+{item: 'chair',
+price: 750,
+use:'sit'
+}
+]
+
+let num= items.map(function(items){
+
+    items.price=items.price+50;
+    return items.price;
+})
+
+console.log(items);
+
+ let obj=items.map(items=>items.price=items.price+50);
+console.log(items);
+
+const num=items.filter(function(items){
+if(items.price>500)
+return true;
+else
+return false;
+})
+console.log(num);
+const num=items.filter(items=>
+    items.price>500)
+    console.log(num);
+
+
+
+//string
+let str='my name is khan';
+
+str1=str.toLowerCase();
+console.log(str1);
+str2=str.toUpperCase();
+console.log(str2);
