@@ -1,0 +1,5 @@
+package com.ustglobal.manager;
+
+public class EmployeeDaoManager {
+
+}

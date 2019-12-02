@@ -1,0 +1,8 @@
+
+public class TestI {
+
+	public static void main(String[] args) {
+		
+		Automobile a = new AutoMobile();
+	}
+}

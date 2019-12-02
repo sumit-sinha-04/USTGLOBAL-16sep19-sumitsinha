@@ -1,0 +1,11 @@
+package com.ustglobal.onetomany;
+
+import lombok.Data;
+
+@Data
+public class Pencil {
+
+	private int pid;
+	private String color;
+	
+}

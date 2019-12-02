@@ -1,0 +1,11 @@
+package com.hotel_billing_system.dao;
+
+import java.util.List;
+
+import com.phone_app_system.bean.Hotel_Bean;
+
+public interface HotelDAO {
+	public List<Hotel_Bean> getAllinfo();
+	
+
+}

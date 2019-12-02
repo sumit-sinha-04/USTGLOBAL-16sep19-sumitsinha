@@ -1,0 +1,87 @@
+package com.ustglobal.dao;
+
+import java.io.FileReader;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+import java.util.Scanner;
+
+//import com.phone_app_system.bean;
+import com.ustglobal.bean.Phone_bean;
+
+//import com.phone_app_system.bean.Phone_bean;
+ 
+public class Phone_dao_impl  implements phone_dao {
+
+	
+	
+	Properties prop = null;
+	FileReader reader = null;
+	Phone_bean user;
+
+	public  void phoneDaoImpl() {
+		
+
+	}
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			reader = new FileReader("db.properties");
+			prop = new Properties();
+			prop.load(reader);
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	
+	public void getAllinfo() {
+		
+		System.out.println("Kindly select among the following");
+		System.out.println(" 1.) To show all contacts");
+		System.out.println(" 2.) To search for contacts");
+		System.out.println(" 3.) to operate on contacts");
+		
+		Scanner sc = new Scanner(System.in);
+	int s =	sc.nextInt();
+		
+	if (s==1)
+	{
+		int s = sc.nextInt();
+		if (s == 1) {
+
+			CallableStatement cs = conn.prepareCall(prop.getProperty("query"));
+			boolean b = cs.execute();
+
+			if (b)
+
+			{
+				ResultSet rs = cs.getResultSet();
+				while (rs.next()) {
+					System.out.println("Name : " + rs.getString(1));
+					System.out.println("Number : " + rs.getInt(2));
+					System.out.println("Price : " + rs.getString(3));
+					System.out.println("............................................");
+				}
+			} else {
+				int x = cs.getUpdateCount();
+				if (x > 0) {
+					System.out.println("Successful");
+				}
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	}
+	}
+		

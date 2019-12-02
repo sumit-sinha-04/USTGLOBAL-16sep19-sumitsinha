@@ -1,0 +1,10 @@
+package com.ustglobal.dao;
+
+import java.util.List;
+
+import com.phone_app_system.bean.Phone_bean;
+
+public class phone_dao {
+	public interface phone_dao {
+		public List<Phone_bean> getAllinfo();
+}

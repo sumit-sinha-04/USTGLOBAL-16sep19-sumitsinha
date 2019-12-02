@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.ustglobal.hibernateassignment&apos; to &apos;hibernateassgnment&apos;" description="Rename resource &apos;com.ustglobal.hibernateassignment&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.ustglobal.hibernateassignment" name="hibernateassgnment" stamp="1574269476524" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+package com.ustglobal.main;
+
+import java.util.List;
+
+import com.hotel_billing_system.hotelfactory.Phone_Factory;
+import com.phone_app_system.bean.Phone_bean;
+import com.phone_app_system.dao.phone_Dao;
+import com.ustglobal.dao.Phone_dao_impl;
+import com.ustglobal.dao.phone_dao;
+
+import com.ustglobal.factory
+;public class main {
+
+	public main() {
+	
+		
+		phone_dao dao = Phon.getInstance();
+		 dao.getAllinfo();
+
+	
+	
+	}
+	
+	
+	
+}

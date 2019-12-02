@@ -1,0 +1,11 @@
+package com.ustglobal.dao;
+
+import java.util.List;
+
+import com.ustglobal.Bean.Bean;
+
+public interface HotelDao {
+
+	public List<Bean> getAllinfo();
+	
+}

@@ -1,0 +1,25 @@
+package com.hotel_billing_system.controller;
+
+import java.util.List;
+
+import com.hotel_billing_system.dao.HotelDAO;
+import com.hotel_billing_system.hotelfactory.Hotel_Factory;
+import com.phone_app_system.bean.Hotel_Bean;
+
+public class Menu {
+	public static void main(String[] args) {
+		HotelDAO dao = Hotel_Factory.getInstance();
+		List<Hotel_Bean> userList = dao.getAllinfo();
+ 
+		if (userList != null) {
+			for (Hotel_Bean user : userList) {
+				System.out.println(user);
+			}
+		} else {
+			System.out.println("something is wrong");
+
+		}
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.ustglobal.onetomany;
+
+public class PencilBox {
+
+	private int pid;
+	private String pname;
+}

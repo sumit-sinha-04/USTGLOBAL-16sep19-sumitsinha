@@ -1,0 +1,18 @@
+package com.ustglobal.dao;
+
+import java.util.List;
+
+import com.ustglobal.Bean.Bean;
+
+public class EmployeeDaoJdbcImp implements HotelDao {
+
+	@Override
+	public List<Bean> getAllinfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+}

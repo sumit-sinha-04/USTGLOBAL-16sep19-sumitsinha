@@ -1,0 +1,13 @@
+package com.ustglobal.collectionframework.list;
+
+import java.util.ArrayList;
+
+public class Comparator {
+
+	ArrayList<Integer> al = new ArrayList<Integer>();
+	al.add(10);
+	al.add(50);
+	al.add(23);
+	
+	
+}

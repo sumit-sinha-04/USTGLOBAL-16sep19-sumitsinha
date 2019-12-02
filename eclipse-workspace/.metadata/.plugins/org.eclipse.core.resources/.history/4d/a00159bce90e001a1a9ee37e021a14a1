@@ -1,0 +1,31 @@
+package com.ustglobal.dao;
+
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
+import com.ustglobal.Bean.Bean;
+
+public class EmployeeDaoJdbcImp implements HotelDao {
+
+	@Override
+	public List<Bean> getAllinfo() {
+	
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+}

@@ -1,0 +1,16 @@
+package com.ustglobal.springcore;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class AnnotationComponentScanApp {
+
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext context =
+				new AnnotationConfigApplicationContext("beans.xml");
+		
+		
+		
+		
+	}
+}

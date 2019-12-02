@@ -1,0 +1,49 @@
+package com.ustglobal.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+import com.ustglobal.Bean.Bean;
+
+public class EmployeeDaoJdbcImp implements HotelDao {
+
+	@Override
+	public List<Bean> getAllinfo() {
+		try {
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		
+	
+			Class.forName("com.mysql.jdbc.Driver");
+		
+		//register driver	
+			//get the connection
+		String url ="jdbc:mysql://localhost:3306/hotel_bill?user=root&password=root";
+		
+		 conn = DriverManager.getConnection(url);
+		//
+		 String sql = "select * from  hotel_bill";
+		  stmt = conn.createStatement();
+			
+		}
+		
+		
+		catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+}

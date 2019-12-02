@@ -1,0 +1,9 @@
+
+public class Snake {
+
+void makeNoise() {
+	
+	System.out.println("phis phis");
+}
+
+}

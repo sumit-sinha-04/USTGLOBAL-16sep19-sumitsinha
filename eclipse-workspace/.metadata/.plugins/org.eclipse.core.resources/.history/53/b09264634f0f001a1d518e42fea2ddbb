@@ -1,0 +1,21 @@
+package com.ustglobal.main;
+
+import java.util.List;
+
+import com.ustglobal.dao.phone_dao;
+import com.ustglobal.factory.factoryClass;
+public class main {
+
+	public main() {
+	
+		
+		phone_dao dao = factoryClass.getInstance();
+		 dao.getAllinfo();
+
+	
+	
+	}
+	
+	
+	
+}

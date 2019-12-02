@@ -1,0 +1,11 @@
+package com.phone_app_system.dao;
+
+import java.util.List;
+
+import com.phone_app_system.bean.Hotel_Bean;
+
+public interface phone_Dao {
+	public  void getAllinfo();
+	
+
+}

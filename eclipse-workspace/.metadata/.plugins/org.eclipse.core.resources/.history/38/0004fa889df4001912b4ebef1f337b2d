@@ -1,0 +1,13 @@
+
+public class Employee {
+String ename;
+int eid;
+
+public static void main(String[] args) {
+	Employee e1 = new Employee();
+	e1.ename ="rashmika";
+	e1.eid=143;
+	Employee e2 = new Employee();
+	
+}
+}

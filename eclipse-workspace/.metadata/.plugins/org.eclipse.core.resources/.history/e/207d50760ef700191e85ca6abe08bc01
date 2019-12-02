@@ -1,0 +1,10 @@
+package com.ustglobal.beanobject.bean;
+
+public class Employee {
+
+	int id;
+	int salary;
+	String name;
+	String dept;
+	String designation;
+}

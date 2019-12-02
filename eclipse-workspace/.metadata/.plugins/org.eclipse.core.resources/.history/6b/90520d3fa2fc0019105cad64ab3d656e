@@ -1,0 +1,11 @@
+package com.ustglobal.collectionframework.list;
+
+import java.util.LinkedList;
+
+public class TestG {
+
+	public static void main(String[] args) {
+		
+		LinkedList li = new LinkedList();
+	}
+}

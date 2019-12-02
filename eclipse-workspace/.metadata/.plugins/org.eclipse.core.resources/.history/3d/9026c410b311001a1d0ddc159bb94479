@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+Name:<input  type="text" name="id",id="id" >
+Name:<input  type="text",name="name",id="name" >
+Name:<input type="password" name="password",id="password">
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+public class BMW implements Automobile {
+
+public int	gear()
+	{
+	System.out.println("gear() method");	
+	}
+	 
+	`
+	
+}

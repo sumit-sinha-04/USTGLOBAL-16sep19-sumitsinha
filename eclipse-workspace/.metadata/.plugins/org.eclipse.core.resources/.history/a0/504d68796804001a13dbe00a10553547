@@ -1,0 +1,23 @@
+package com.ustglobal.pausing;
+
+public class MyjoinThread  extends  Thread
+{
+	@Override
+	public void run() {
+
+		for (int i = 0; i < 10; i++) {
+
+			System.out.println("child thread");
+try {
+	
+	Thread.sleep(2000);
+} catch (Exception e) {
+	// TODO: handle exception
+}
+		}
+
+		
+		//super.run();
+	}
+
+}

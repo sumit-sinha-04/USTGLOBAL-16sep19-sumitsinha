@@ -1,0 +1,10 @@
+package com.ustglobaldi;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class BeanHostProcessarClass implements BeanPostProcessor {
+
+	
+	
+	
+}

@@ -1,0 +1,4 @@
+16,ritesh,70000,M
+17,arnav,13000,M
+18,angelpriya,50000,F
+19,sheela,7000,F

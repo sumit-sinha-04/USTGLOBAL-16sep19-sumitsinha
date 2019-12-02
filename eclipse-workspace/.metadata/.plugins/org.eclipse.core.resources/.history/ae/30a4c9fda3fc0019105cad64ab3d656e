@@ -1,0 +1,13 @@
+package com.ustglobal.collectionframework.list;
+
+public class Student {
+
+	
+	
+	int id;
+	String name;
+	
+	double percentage;
+	
+
+}

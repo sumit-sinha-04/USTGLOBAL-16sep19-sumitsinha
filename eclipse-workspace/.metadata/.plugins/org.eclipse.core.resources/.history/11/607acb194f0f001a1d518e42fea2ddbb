@@ -1,0 +1,20 @@
+package com.ustglobal.main;
+
+import java.util.List;
+
+import com.ustglobal.factory;
+public class main {
+
+	public main() {
+	
+		
+		phone_dao dao = Phon.getInstance();
+		 dao.getAllinfo();
+
+	
+	
+	}
+	
+	
+	
+}

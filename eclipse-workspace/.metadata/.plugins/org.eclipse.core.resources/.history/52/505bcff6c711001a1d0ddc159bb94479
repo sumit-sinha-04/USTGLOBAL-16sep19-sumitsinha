@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="./form"method="post">
+ID:<input  type="text" name="id",id="id" >
+Name:<input  type="text",name="name",id="name" >
+Password:<input type="password" name="password",id="password">
+Doj:<input type="date" name="doj",id="doj">
+ <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+<input type="submit"  value="register"> 
+</form>
+</body>
+</html>

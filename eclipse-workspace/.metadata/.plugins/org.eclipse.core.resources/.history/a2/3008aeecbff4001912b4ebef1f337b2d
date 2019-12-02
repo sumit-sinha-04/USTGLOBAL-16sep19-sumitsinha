@@ -1,0 +1,8 @@
+
+public class SubClass {
+
+	 SubClass() {
+		System.out.println("subclass  constuctor");
+		 // TODO Auto-generated constructor stub
+	}
+}

@@ -1,0 +1,22 @@
+package com.ustglobal.config;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.ustglobaldi.Animal;
+import com.ustglobaldi.Hello;
+
+public class AnnotationAPP {
+
+
+	public static void main(String[] args) {
+
+
+		ApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class);
+		Hello hello=context.getBean(Hello.class);
+		System.out.println(hello.getMsg());
+        Animal animal = context.getBean(Animal.class);
+		animal.makeSound();
+
+	}
+}

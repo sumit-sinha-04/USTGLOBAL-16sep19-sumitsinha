@@ -1,0 +1,16 @@
+
+public class Employee2 {
+
+	String name;
+	int eid;
+	long aadharno;
+	
+	Employee2(String name,int eid,long adharno)
+	{
+		
+		
+	}
+	
+	
+	
+}

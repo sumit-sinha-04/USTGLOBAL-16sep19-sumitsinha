@@ -1,0 +1,13 @@
+
+public class Toyota implements Automobile {
+public int gear()
+{
+System.out.println("gear() method");	
+
+return 20;
+
+}
+
+
+	
+}

@@ -1,0 +1,12 @@
+<%
+String s =(String) request.getAttribute("msg");
+
+
+
+%>
+
+<html>
+<body>
+<h2>${hola}</h2>
+</body>
+</html>

@@ -1,0 +1,8 @@
+package com.ustglobaldi;
+
+public class Pet {
+
+	
+	private String name;
+	private Animal animal;
+}

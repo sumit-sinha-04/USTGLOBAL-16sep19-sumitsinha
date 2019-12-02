@@ -1,0 +1,18 @@
+
+public class TestA {
+	
+	public static int add(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+	public static double add(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+	public static void main(String[] args) {
+		
+		int a=add(6+9);
+		double a=add(78+93);
+	}
+
+}

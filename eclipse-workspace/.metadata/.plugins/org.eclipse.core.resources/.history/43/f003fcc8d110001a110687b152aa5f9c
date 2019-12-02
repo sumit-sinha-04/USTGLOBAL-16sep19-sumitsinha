@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="hello" class="com.ustglobaldi.Hello" init-method="init" destroy-method="destroy">
+		<property name="msg" value="i love my india"/>
+</bean>
+<bean id="dog" class="com.ustglobaldi.Dog"/>
+<bean id="human" class="com.ustglobal.springcore.Human" primary="true"/>
+<bean id="animal" class="com.ustglobaldi.Cat" /> 
+<bean id="pet" class="com.ustglobaldi.Pet" autowire="byName">
+
+<property name="name" value="Tommy"/>
+
+<!-- <property name="animal" ref="dog"/>
+<constructor-arg name="name" value="Rakhe"/>
+<constructor-arg name="animal" ref="dog"/>
+ -->
+</bean>
+<bean id="beanPostProcessar" class="com.ustglobaldi.BeanHostProcessarClass"></bean>
+<bean id="beanFactoryPostProcessar" class="com.ustglobaldi.BeanFactoryPostProcessarCLass"></bean>
+</beans> 

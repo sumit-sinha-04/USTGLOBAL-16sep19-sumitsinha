@@ -1,0 +1,7 @@
+package com.ustglobal.strings;
+
+public class Employee {
+
+	int id;
+	String name;
+}

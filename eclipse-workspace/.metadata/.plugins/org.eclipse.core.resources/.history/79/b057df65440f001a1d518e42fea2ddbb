@@ -1,0 +1,18 @@
+package com.hotel_billing_system.hotelfactory;
+
+import com.hotel_billing_system.dao.HotelDAO;
+import com.hotel_billing_system.dao.HotelDAOImp;
+
+public class Hotel_Factory {
+	public Hotel_Factory() {
+		
+	}
+	
+	public static HotelDAO getInstance() {
+		
+		HotelDAO dao = new HotelDAOImp();
+		return dao;
+		
+	}
+
+}

@@ -1,0 +1,82 @@
+package com.ustglobal.empspringmvc.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.ustglobal.empspringmvc.EmployeeBean;
+
+public class EmployeeDaoimpl implements EmployeeDao {
+private EntityManagerFactory factory=Persistence.createEntityManagerFactory("employee-unit");
+	public EmployeeBean login(int id, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean register(EmployeeBean bean) {
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+	try {
+		transaction.begin();
+		manager.persist(bean);
+     	
+     	
+		return true;
+    	}
+	
+     	catch(Exception e)
+	    
+	{ 
+		e.printStackTrace();
+		return false;
+	}
+	
+	}
+
+	public boolean deleteEmployee(int id) {
+	
+		
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		EmployeeBean bean = manager.find(EmployeeBean.class, id);
+		manager.remove(bean);
+         transaction.commit();
+		return false;
+	}
+
+	public EmployeeBean searchEmployee(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean updateEmployee(EmployeeBean bean) {
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		EmployeeBean employeebean = manager.find(EmployeeBean.class, bean.getId());
+		employeebean.setName(bean.getName());
+		employeebean.setGender(bean.getGender());
+		employeebean.setPassword(bean.getPassword());
+		employeebean.setDoj(bean.getDoj());
+           transaction.commit();
+
+		return true;
+	}
+
+	public boolean changePassword(int id, String password) {
+	      	EntityManager manager = factory.createEntityManager();
+	    	 EntityTransaction transaction = manager.getTransaction();
+		   transaction.begin();
+		   EmployeeBean bean = manager.find(EmployeeBean.class, id);
+       	    bean.setPassword(password);
+	        transaction.commit();
+	         return true;
+	}
+
+	
+	
+}

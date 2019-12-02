@@ -1,0 +1,104 @@
+package com.ustglobal.dao;
+
+import java.io.FileReader;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+import java.util.Scanner;
+
+//import com.phone_app_system.bean;
+import com.ustglobal.bean.Phone_bean;
+
+//import com.phone_app_system.bean.Phone_bean;
+ 
+public class Phone_dao_impl  implements phone_dao {
+
+	
+	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	   static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/phone_data";
+
+	   //  Database credentials
+	   static final String USER = "root";
+	   static final String PASS = "root";
+	   
+	
+
+	public void getAllinfo() {
+
+		
+		Scanner s = new Scanner(System.in);
+
+		System.out.println("Kindly select among the following");
+		System.out.println(" 1.) To show all contacts");
+		System.out.println(" 2.) To search for contacts");
+		System.out.println(" 3.) to operate on contacts");
+//		System.out.println(" 4.) Print total bill..");
+
+	int s1 =s.nextInt(); 	
+
+Connection conn =null;
+Statement stmt = null;
+ResultSet  rs = null;
+	
+	if(s1==1)
+	{
+		
+		 
+		
+		 
+		   try{
+		      //STEP 2: Register JDBC driver
+		      Class.forName("com.mysql.jdbc.Driver");
+
+		      //STEP 3: Open a connection
+		      System.out.println("Connecting to database...");
+		      conn = DriverManager.getConnection(DB_URL,USER,PASS);
+
+		      //STEP 4: Execute a query
+		      System.out.println("Creating statement...");
+		     stmt = conn.createStatement();
+		      String sql;
+		      sql = "SELECT * FROM phone_book";
+		      ResultSet rs = stmt.executeQuery(sql);
+
+		      //STEP 5: Extract data from result set
+		      while(rs.next()){
+		         //Retrieve by column name
+		         String Name = rs.getString("name");
+		         int number  = rs.getInt("number");
+		         String groups = rs.getString("groups");
+
+		         //Display values
+		         System.out.print("Name " +Name);
+		         System.out.print(", Age: " +number);
+		         System.out.print(", groups: " + groups);
+		 }
+		   }
+		      //STEP 6: Clean-up environment
+		  catch (Exception e) {
+			e.printStackTrace();
+		}
+		  
+		   
+		   finally{
+		      //finally block used to close resources
+		      try{
+		         if(stmt!=null)
+		            stmt.close();
+		     
+		         if(conn!=null)
+		            conn.close();
+		      }
+		      catch (Exception e) {
+				e.printStackTrace();
+			}
+		      }//end finally try
+	}}  
+}
+	
+		

@@ -1,0 +1,19 @@
+package com.ustglobal.manager;
+
+import com.ustglobal.dao.HotelDao;
+
+public class EmployeeDaoManager {
+
+		private EmployeeDaoManager()
+		
+		{}
+		
+		public static HotelDao getEmployeeDao()
+		{
+			
+			
+			return new EmployeeDaoJdbcImp();
+		}
+	}
+
+

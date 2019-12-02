@@ -1,0 +1,18 @@
+package com.ustglobal.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.ustglobaldi.Hello;
+
+public class ConfigurationClass {
+
+	@Configuration
+	public Hello getHello()
+	{
+		
+	return new Hello();
+	
+	}
+	
+	
+}

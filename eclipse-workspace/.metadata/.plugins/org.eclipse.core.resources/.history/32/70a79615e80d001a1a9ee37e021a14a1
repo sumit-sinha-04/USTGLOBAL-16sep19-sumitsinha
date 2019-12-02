@@ -1,0 +1,24 @@
+package com.ustglobal.collectionframework.list.selftry;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class TestA {
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+		Collection values = new ArrayList();
+		values.add(null);
+		values.add(null);
+		values.add('s');
+		values.add(36.9);
+		values.add("sumit");
+		System.out.println(values);
+	}
+	
+	
+	
+}

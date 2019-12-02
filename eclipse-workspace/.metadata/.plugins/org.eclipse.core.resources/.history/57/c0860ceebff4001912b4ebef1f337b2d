@@ -1,0 +1,9 @@
+
+public class SubClass {
+
+	String s="subclass variable"
+	 SubClass() {
+		System.out.println("subclass  constuctor");
+		 // TODO Auto-generated constructor stub
+	}
+}

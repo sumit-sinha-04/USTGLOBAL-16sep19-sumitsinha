@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestG.java&apos; to &apos;com.ustglobal.java8features.TestE.java&apos;&#x0D;&#x0A;- Original project: &apos;Maps&apos;&#x0D;&#x0A;- Destination element: &apos;com.ustglobal.java8features.TestE.java&apos;&#x0D;&#x0A;- Original element: &apos;com.ustglobal.java8features.TestG.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Java8feature/src&lt;com.ustglobal.java8features{TestE.java" element1="/src&lt;com.ustglobal.java8features{TestG.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1572956413381" units="1" version="1.0"/>
+</session>

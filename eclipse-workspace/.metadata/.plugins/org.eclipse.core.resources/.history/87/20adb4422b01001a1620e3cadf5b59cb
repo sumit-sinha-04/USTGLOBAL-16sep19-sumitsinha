@@ -1,0 +1,64 @@
+package com.ustglobal.jdbcapp;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.Driver;
+
+public class ExecuteUpdateQuery {
+
+	public static void main(String[] args) {
+
+
+		Connection conn = null;
+
+		java.sql.PreparedStatement pstmt = null;
+
+		try {
+
+			//load the drivers
+
+			Driver driver = new Driver();
+
+			DriverManager.registerDriver(driver);
+
+
+			//get the connections
+
+			String url ="jdbc:mysql://localhost:3306/ust_ty_db?user=root&password=root";
+
+			conn = DriverManager.getConnection(url);
+			//issue sql query
+			String sql = "update Employee_info set name='ABC',sal=50,gender='O' where id =6";
+			pstmt = conn.prepareStatement(sql);
+			int count =pstmt.executeUpdate(sql);
+			//read the result
+			System.out.println(count+"row affected");
+
+
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		finally {
+
+			try {
+				if (conn!=null) {
+					conn.close();
+				}
+				if (pstmt!=null) {
+					pstmt.close();
+				}
+
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+
+	}
+
+
+}	

@@ -1,0 +1,11 @@
+package com.ustglobal.onetoone;
+
+public class VoterCard {
+
+	private int vid;
+	private String vName;
+
+
+
+
+}

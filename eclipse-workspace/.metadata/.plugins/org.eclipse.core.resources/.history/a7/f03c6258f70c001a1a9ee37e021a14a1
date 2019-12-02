@@ -1,0 +1,10 @@
+package com.ustglobal.onetomany;
+
+import lombok.Data;
+
+@Data
+public class PencilBox {
+
+	private int pid;
+	private String pname;
+}

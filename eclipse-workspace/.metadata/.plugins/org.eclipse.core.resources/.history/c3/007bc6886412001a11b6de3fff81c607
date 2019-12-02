@@ -1,0 +1,45 @@
+package com.ustglobal.springmvc.service;
+
+import com.ustglobal.empspringmvc.EmployeeBean;
+import com.ustglobal.empspringmvc.dao.EmployeeDao;
+
+public class EmployeeServiceImp implements EmployeeService {
+
+	
+	
+	public EmployeeBean login(int id, String password) {
+	return dao.login(id,password);
+	
+	}
+
+	public boolean register(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean deleteEmployee(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public EmployeeBean searchEmployee(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean updateEmployee(EmployeeBean bean) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean changePassword(int id, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+	
+	
+	
+	
+}

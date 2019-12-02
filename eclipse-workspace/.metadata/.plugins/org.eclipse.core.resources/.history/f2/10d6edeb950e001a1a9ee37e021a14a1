@@ -1,0 +1,43 @@
+package com.ustglobal.collectionframework.list;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class Sort {
+	public static void main(String[] args) {
+
+
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(new Student(1, "sumit", 65));
+		al.add(new Student(2, "raveesh", 80));
+		al.add(new Student(3, "ritesh", 35));
+		al.add(new Student(4, "arnav", 68));
+		al.add(new Student(5, "chodu", 90));
+		
+
+//	Comparator<T> c = new  ;
+
+		Comparator<Student > c = new Comparator<Student>() {
+			
+			@Override
+			public int compare(Student o1, Student o2) {
+			
+			String l = o1.name;
+			String m =o2.name;
+			if(l.charAt(0)>m.charAt(0))
+			{
+				return 1;
+			}
+			else
+				return 0;
+			}
+		};
+		
+		al.sort(c);
+		
+		for (Student student : al) {
+			System.out.println(student);
+		}
+		}
+	}	
+

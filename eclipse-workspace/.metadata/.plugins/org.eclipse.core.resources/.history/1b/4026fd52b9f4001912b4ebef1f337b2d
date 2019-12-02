@@ -1,0 +1,14 @@
+
+public class Bus {
+
+	int seats;
+	String color;
+	
+	Bus(int seats,String color)
+	{
+		this.seats=seats;
+		tthis.color=color;
+		
+		
+	}
+}

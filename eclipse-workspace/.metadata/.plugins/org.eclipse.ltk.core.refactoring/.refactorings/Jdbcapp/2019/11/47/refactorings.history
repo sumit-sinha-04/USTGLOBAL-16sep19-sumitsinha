@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ExecuteInsertQuery.java&apos; to &apos;JdbcWithMaven/src/main/java/com.ustglobal.JdbcWithMaven&apos;&#x0D;&#x0A;- Original project: &apos;Jdbcapp&apos;&#x0D;&#x0A;- Destination element: &apos;JdbcWithMaven/src/main/java/com.ustglobal.JdbcWithMaven&apos;&#x0D;&#x0A;- Original element: &apos;com.ustglobal.jdbcapp.ExecuteInsertQuery.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=JdbcWithMaven/src\/main\/java&lt;com.ustglobal.JdbcWithMaven" element1="/src&lt;com.ustglobal.jdbcapp{ExecuteInsertQuery.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1574235211758" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,27 @@
+package com.ustglobal.collectionframework.list;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class TestB {
+	public static void main(String[] args) {
+
+		ArrayList al = new ArrayList();
+		al.add(10);
+		al.add(26.7);
+		al.add(true);
+		al.add("chinna");
+		
+		Iterator it = al.iterator();
+		Object o = it.next();
+		System.out.println("obj1"+o);
+		
+		for (Object object : al) {
+			System.out.println(object);
+		}
+
+	}
+
+
+
+}

@@ -1,0 +1,12 @@
+
+public class Person {
+String name;
+int age;
+
+Person (String pname, int page)
+{
+name=pname;
+age=page;
+
+}
+}

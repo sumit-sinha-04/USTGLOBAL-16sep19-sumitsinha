@@ -1,0 +1,14 @@
+package com.ustglobal.springcore;
+
+import java.applet.AppletContext;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class LifeCycle {
+public static void main(String[] args) {
+	
+	ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+	
+}
+}
